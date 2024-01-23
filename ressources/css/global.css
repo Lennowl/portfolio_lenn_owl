@@ -1,5 +1,6 @@
 * {
-    background-color: #060032;
+    background-color: aliceblue;
+    /*background-color: #060032;*/
     margin: 0;
 }
 
@@ -13,12 +14,18 @@ header {
 
 footer{
     display: flex;
-    align-content: space-between;
+    justify-content: right;
     align-items: center;
     height: 50px;
+    background-color: #03001D;
 }
 
-footer, #logo_accueil {
+.profile_picture{
+    height: 350px;
+    border-radius: 100%;
+}
+
+#logo_accueil {
     background-color: #03001D;
 }
 
@@ -28,7 +35,6 @@ footer, #logo_accueil {
     background-color: transparent;
     margin-left: 5%;
 }
-
 
 #image_accueil:hover{
     transition: transform 0.5s ease;
@@ -43,7 +49,11 @@ p {
     color: #DBC452;
     text-decoration: none;
     background-color: #03001D;
-    margin-left: 25px;
+    margin-right: 35px;
+}
+
+#linkedin:hover {
+    text-decoration: underline;
 }
 
 
