@@ -1,0 +1,52 @@
+* {
+    background-color: #060032;
+    margin: 0;
+}
+
+header {
+    background-color: #03001D;
+    height: 100px;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+footer, #logo_accueil {
+    background-color: #03001D;
+}
+
+
+#image_accueil {
+    height: 85px;
+    background-color: transparent;
+    margin-left: 5%;
+}
+
+
+#image_accueil:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.15);
+}
+
+p {
+    height: 150px;
+}
+
+#linkedin {
+    color: #DBC452;
+    text-decoration: none;
+    background-color: #03001D;
+    margin-left: 25px;
+}
+
+
+
+
+
