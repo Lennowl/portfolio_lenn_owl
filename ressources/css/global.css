@@ -1,18 +1,21 @@
 body {
-    background-color: aliceblue;
-    /*background-color: #060032;*/
+    background-color: #000005;
+    color: #d5ad49;
+    /*background-color: #000005;*/
     margin: 0;
 }
 
+div {
+    padding: 1%;
+}
+
 header {
-    background-color: #03001D;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Rubik Doodle Shadow";
     font-size: 275%;
-    color: white;
 }
 
 header > p {
@@ -28,7 +31,12 @@ footer{
     justify-content: right;
     align-items: center;
     height: 50px;
-    background-color: #03001D;
+}
+
+.top_part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .profile_picture{
@@ -36,8 +44,23 @@ footer{
     border-radius: 100%;
 }
 
-#logo_accueil {
-    background-color: #03001D;
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1%;
+}
+
+h4 {
+    font-size: 8vh;
+    font-weight: bold;
+    margin: 2% 0 2% 0;
+}
+
+.presentation {
+    font-size: 2.5vh;
+    font-weight: normal;
 }
 
 
@@ -52,19 +75,27 @@ footer{
     transform: scale(1.15);
 }
 
+.page_change{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 button{
     border:none;
     background-color: transparent;
 }
 
 .page_change img{
-    height: 90px;
+    height: 175px;
     background-color: transparent;
+    opacity: 0.8;
 }
 
 .page_change img:hover{
     transition: transform 0.5s ease;
     transform: scale(1.15);
+    opacity: 1;
 }
 
 #bowlOfDice.rotation{
@@ -94,9 +125,8 @@ button{
 }
 
 #linkedin {
-    color: #DBC452;
+    color: #d5ad49;
     text-decoration: none;
-    background-color: #03001D;
     margin-right: 35px;
 }
 
