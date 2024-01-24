@@ -1,4 +1,4 @@
-* {
+body {
     background-color: aliceblue;
     /*background-color: #060032;*/
     margin: 0;
@@ -8,8 +8,19 @@ header {
     background-color: #03001D;
     height: 100px;
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
     align-items: center;
+    font-family: "Rubik Doodle Shadow";
+    font-size: 275%;
+    color: white;
+}
+
+header > p {
+    margin-right: 5%;
+}
+
+main{
+    font-family: "Lilita One";
 }
 
 footer{
@@ -33,7 +44,7 @@ footer{
 #image_accueil {
     height: 85px;
     background-color: transparent;
-    margin-left: 5%;
+    margin-left: 50%;
 }
 
 #image_accueil:hover{
