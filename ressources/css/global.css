@@ -1,7 +1,6 @@
 body {
     background-color: #000005;
     color: #d5ad49;
-    /*background-color: #000005;*/
     margin: 0;
 }
 
@@ -24,6 +23,9 @@ header > p {
 
 main{
     font-family: "Lilita One";
+    padding-left: 5%;
+    padding-right: 5%;
+
 }
 
 footer{
@@ -58,7 +60,20 @@ h4 {
     margin: 2% 0 2% 0;
 }
 
-.presentation {
+h5 {
+    font-size: 6vh;
+    margin: 1% 0 1% 0;
+}
+
+h6 {
+    color: #ffef87;
+    font-size: 4vh;
+    margin: 1% 0 1% 2%;
+    opacity: 50%;
+
+}
+
+.description {
     font-size: 2.5vh;
     font-weight: normal;
 }
@@ -75,7 +90,15 @@ h4 {
     transform: scale(1.15);
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .page_change{
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -87,7 +110,7 @@ button{
 }
 
 .page_change img{
-    height: 175px;
+    height: 200px;
     background-color: transparent;
     opacity: 0.8;
 }
@@ -124,6 +147,17 @@ button{
     100% { transform: rotate(180deg); }
 }
 
+
+.list_skill{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list_skill img {
+    height: 150px;
+}
+
 #linkedin {
     color: #d5ad49;
     text-decoration: none;
@@ -134,7 +168,28 @@ button{
     text-decoration: underline;
 }
 
+@media (max-width: 1100px) {
 
+    .list_skill {
+        flex-direction: column;
+    }
 
+    .list_skill img {
+        margin: 1% 0 1% 0;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    .top_part {
+        flex-direction: column;
+    }
+
+    .page_change {
+        flex-direction: column;
+    }
+
+}
 
 
