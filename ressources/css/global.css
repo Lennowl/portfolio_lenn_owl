@@ -102,6 +102,7 @@ h6 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 button{
@@ -150,13 +151,67 @@ button{
 
 .list_skill{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .list_skill img {
     height: 150px;
+    margin: 1% 2% 1% 2%;
 }
+
+
+.carousel {
+    max-width: 95%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    display: none;
+    max-width: 95%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev{
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: darkgrey;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
 
 #linkedin {
     color: #d5ad49;
@@ -168,28 +223,10 @@ button{
     text-decoration: underline;
 }
 
-@media (max-width: 1100px) {
 
-    .list_skill {
+@media (max-width: 800px) {
+    .top_part{
         flex-direction: column;
     }
-
-    .list_skill img {
-        margin: 1% 0 1% 0;
-    }
-
 }
-
-@media (max-width: 780px) {
-
-    .top_part {
-        flex-direction: column;
-    }
-
-    .page_change {
-        flex-direction: column;
-    }
-
-}
-
 

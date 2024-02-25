@@ -23,9 +23,23 @@
         </div>
     </div>
     <div class="carousel">
-        <video controls>
-            <source src="ressources/media/2024-01-25%2010-59-07.mp4" type="video/mp4">
-        </video>
+
+        <div class="slide">
+            <video controls>
+                <source src="ressources/media/2024-01-25%2010-59-07.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="slide">
+            <img src="ressources/images/bowl-extract-code.PNG">
+        </div>
+
+        <div class="slide">
+            <img src="ressources/images/bowl-extract-command.PNG">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10096</a>
+        <a class="next" onclick="plusSlides(1)">&#10097</a>
     </div>
     <div class="page_change">
         <button id="aventuriers" class="dice" onclick="lancerDe('aventuriers', 'aventuriers.html')"><img src="ressources/images/aventuriers.png" id="aventuriersPicture"></button>
@@ -34,5 +48,6 @@
 </main>
 <footer><a href="https://www.linkedin.com/in/lenn-fontaine-834aa5263/" id="linkedin">Retrouvez moi sur LinkedIn</a></footer>
 <script src="ressources/js/script.js"></script>
+<script src="ressources/js/slides.js"></script>
 </body>
 </html>
