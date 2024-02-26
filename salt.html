@@ -12,7 +12,7 @@
 <body>
 <header>
     <a href="index.html" id="logo_accueil"><img src="ressources/images/accueil.png" id="image_accueil"></a>
-    <p>Lenn_owl</p>
+    <a href="index.html"><p>Lenn_owl</p></a>
 </header>
 <main>
     <div class="top_part">
@@ -22,6 +22,22 @@
             <p class="presentation">Projet de 2ème année de BUT</p>
         </div>
     </div>
+    <div class="project_description">
+
+    </div>
+    <div class="carousel">
+
+        <div class="slide">
+            <img src="ressources/images/salt-extract-site.PNG">
+        </div>
+
+        <div class="slide">
+            <img src="ressources/images/salt-extract-code.PNG">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10096</a>
+        <a class="next" onclick="plusSlides(1)">&#10097</a>
+    </div>
     <div class="page_change">
         <button id="aventuriers" class="dice" onclick="lancerDe('aventuriers', 'aventuriers.html')"><img src="ressources/images/aventuriers.png" id="aventuriersPicture"></button>
         <button id="bowlOfDice" class="dice" onclick="lancerDe('bowlOfDice', 'bowlOfDice.html')"><img src="ressources/images/bowl-of-dice.png" id="bowlOfDicePicture"></button>
@@ -30,5 +46,6 @@
 
 <footer><a href="https://www.linkedin.com/in/lenn-fontaine-834aa5263/" id="linkedin">Retrouvez moi sur LinkedIn</a></footer>
 <script src="ressources/js/script.js"></script>
+<script src="ressources/js/slides.js"></script>
 </body>
 </html>

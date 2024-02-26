@@ -8,6 +8,11 @@ div {
     padding: 1%;
 }
 
+a {
+    text-decoration: none;
+    color: #d5ad49;
+}
+
 header {
     height: 100px;
     display: flex;
@@ -17,7 +22,7 @@ header {
     font-size: 275%;
 }
 
-header > p {
+header > a {
     margin-right: 5%;
 }
 
@@ -44,6 +49,13 @@ footer{
 .profile_picture{
     height: 350px;
     border-radius: 100%;
+}
+
+.subtitle {
+    font-size: 2vh;
+    margin: -2% 0 2% 0;
+    color: #ffef87;
+    opacity: 70%;
 }
 
 .intro{
@@ -158,6 +170,7 @@ button{
 
 .list_skill img {
     height: 150px;
+    max-width: 500px;
     margin: 1% 2% 1% 2%;
 }
 
@@ -173,6 +186,10 @@ button{
 
 .slide {
     display: none;
+    max-width: 95%;
+}
+
+.slide > img {
     max-width: 95%;
 }
 
@@ -227,6 +244,10 @@ button{
 @media (max-width: 800px) {
     .top_part{
         flex-direction: column;
+    }
+
+    .list_skill img {
+        max-width: 300px;
     }
 }
 
