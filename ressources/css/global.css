@@ -85,6 +85,11 @@ h6 {
 
 }
 
+.list_title {
+    font-size: 3vh;
+    margin: 1% 0 1% 0;
+}
+
 .presentation {
     font-size: 2.5vh;
     font-weight: normal;
@@ -92,6 +97,7 @@ h6 {
 
 
 #image_accueil {
+    transition: transform 0.5s ease;
     height: 85px;
     background-color: transparent;
     margin-left: 50%;
@@ -123,6 +129,7 @@ button{
 }
 
 .page_change img{
+    transition: transform 0.5s ease;
     height: 200px;
     background-color: transparent;
     opacity: 0.8;
@@ -233,6 +240,40 @@ button{
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.list_but_skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.but_skill{
+    transition: opacity 0.5s ease;
+    max-width: 250px;
+    display: block;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 5px 15px;
+    margin: 1%;
+    background-color: #444444;
+    border-radius: 16px;
+    opacity: 0.7;
+}
+
+.but_skill:hover{
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.skill_title {
+    font-size: 2vh;
+    margin-top:1% ;
+}
+
+.skill_text {
+    font-size: 1.5vh;
 }
 
 
