@@ -176,8 +176,15 @@ button{
 }
 
 .list_skill img {
-    height: 150px;
+    height: 130px;
     max-width: 500px;
+}
+
+.skill_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 1% 2% 1% 2%;
 }
 
@@ -277,7 +284,7 @@ button{
 }
 
 
-#linkedin {
+.link_footer {
     color: #d5ad49;
     text-decoration: none;
     margin-right: 35px;
